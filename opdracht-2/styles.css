@@ -12,9 +12,9 @@
   --color-light-grey: #e8e8e8;
   --dark-grey: #737373;
   --sphere-color-one: #faa0c7;
-  --sphere-color-one: #272729;
-  --sphere-color-one: #928471;
-  --sphere-color-one: #c2c2b4;
+  --sphere-color-two: #272729;
+  --sphere-color-three: #928471;
+  --sphere-color-four: #c2c2b4;
 }
 
 body {
@@ -48,15 +48,43 @@ body {
 
 .extra-highlight {
   position: absolute;
-  top: 2rem;
-  left: -3.5rem;
-  /*font-size: 1rem;*/
-  /*line-height: 1rem;*/
-  padding: 1rem;
-  /*width: 50px;*/
-  /*height: 20px;*/
+  top: 3rem;
+  /*right: calc(100% - 1.4rem);*/
+  left: -3.61rem;
+  padding: .5rem 1.5rem;
+  width: 80px;
+  font-weight: 600;
+  height: 35px;
   background-color: var(--color-light-grey);
   color: var(--color-orange);
-  text-transform: capitalize;
+  text-transform: uppercase;
   transform: rotate(-90deg);
+}
+
+.sphere {
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  margin-right: .4rem;
+}
+
+.sphere-first-color {
+  background-color: var(--sphere-color-one);
+}
+
+.sphere-second-color {
+  background-color: var(--sphere-color-two);
+}
+
+.sphere-tirth-color {
+  background-color: var(--sphere-color-three);
+}
+
+.sphere-fourth-color {
+  background-color: var(--sphere-color-four);
+}
+
+.price-article {
+  display: block;
 }
